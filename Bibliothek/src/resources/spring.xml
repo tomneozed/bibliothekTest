@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="auteurDAO" class="com.DAO.impl.AuteurDaoImpl"></bean>
+	<bean id="auteurResponse" class="com.responses.AuteurResponse">
+		<property name="errorType" value="0"></property>
+		<property name="errorMessage" value=""></property>
+	</bean>
+	<bean id="auteurPojo" class="com.DAO.pojo.AuteurPojo"></bean>
+	
+	<bean id="ouvrageDAO" class="com.DAO.impl.OuvrageDaoImpl"></bean>
+	<bean id="ouvrageResponse" class="com.responses.OuvrageResponse">
+		<property name="errorType" value="0"></property>
+		<property name="errorMessage" value=""></property>
+	</bean>
+	<bean id="ouvragePojo" class="com.DAO.pojo.OuvragePojo"></bean>
+	
+	<bean id="pretDAO" class="com.DAO.impl.PretDaoImpl"></bean>
+	<bean id="pretResponse" class="com.responses.PretResponse">
+		<property name="errorType" value="0"></property>
+		<property name="errorMessage" value=""></property>
+	</bean>
+	<bean id="pretPojo" class="com.DAO.pojo.PretPojo"></bean>
+</beans>
